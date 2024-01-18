@@ -9,12 +9,12 @@
     <h1>ARIA</h1>
     <nav role="navigation">
       <ul>
-        <li>What is ARIA?</li>
-        <li>Features</li>
-        <li>Attributes</li>
+        <li tabindex="0">What is ARIA?</li>
+        <li tabindex="1">Features</li>
+        <li tabindex="2">Attributes</li>
       </ul>
     </nav>
-    <section>
+    <section id="section-1">
       <h2 id="define-aria">What is ARIA?</h2>
       <p aria-labelledby="define-aria">
         ARIA is acronym for Accessible Rich Internet Applications. ARIA was
@@ -30,7 +30,7 @@
         disabilities and those who use assistive technology.
       </p>
     </section>
-    <section>
+    <section id="section-2">
       <h2 id="features">Features of ARIA</h2>
       <div aria-labelledby="features">
         <p>
@@ -49,7 +49,7 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section id="section-3">
       <h2>Common ARIA Attributes</h2>
       <p><strong>aria-label</strong> gives a name (or label) to an element.</p>
       <p>
@@ -64,9 +64,11 @@
       <p>
         <strong>aria-hidden</strong> is used to hide an element from
         accessibility tools, such as screen readers, wihile still allowing it to
-        be visivle to sighted users. The values for this attribute is "true" or
+        be visible to sighted users. The values for this attribute is "true" or
         "false".
       </p>
     </section>
+    <footer aria-hidden="true">&copy; 2024 | Coding For Beginners</footer>
+    <!--Placed aria-hidden here because it not really necessary for the assistive technology to read.-->
   </body>
 </html>
