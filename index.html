@@ -9,9 +9,9 @@
     <h1>ARIA</h1>
     <nav role="navigation">
       <ul>
-        <li tabindex="0">What is ARIA?</li>
-        <li tabindex="1">Features</li>
-        <li tabindex="2">Attributes</li>
+        <li tabindex="0"><a href="#section-1">What is ARIA?</a></li>
+        <li tabindex="1"><a href="#section-2">Features</a></li>
+        <li tabindex="2"><a href="#section-3">Attributes</a></li>
       </ul>
     </nav>
     <section id="section-1">
@@ -26,8 +26,8 @@
         own. Meaning only those who use assistive technology will notice the
         difference between ones using ARIA and ones that are not. As developers
         it's our resposiblilty to make our web applications more accessible.
-        ARIA makes web content and applications more accessible for people with
-        disabilities and those who use assistive technology.
+        Simply put, ARIA makes web content and applications more accessible for
+        people with disabilities and those who use assistive technology.
       </p>
     </section>
     <section id="section-2">
@@ -67,7 +67,27 @@
         be visible to sighted users. The values for this attribute is "true" or
         "false".
       </p>
+      <a
+        aria-label="Read more about ARIA attributes here"
+        href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
+        >Read More</a
+      >
     </section>
+    <p>Did you find this content helpful:</p>
+    <input
+      aria-label="Click this checkbox if you found this content helpful."
+      type="checkbox"
+      id="yes"
+      name="yes"
+    />
+    <label for="yes">Yes</label>
+    <input
+      aria-label="Click this checkbox if you didn't find this content helpful."
+      type="checkbox"
+      id="no"
+      name="no"
+    />
+    <label for="no">No</label>
     <footer aria-hidden="true">&copy; 2024 | Coding For Beginners</footer>
     <!--Placed aria-hidden here because it not really necessary for the assistive technology to read.-->
   </body>
