@@ -14,6 +14,7 @@
         <li tabindex="2"><a href="#section-3">Attributes</a></li>
       </ul>
     </nav>
+    <!--tabindex makes the li elements focusable and accessible for keyboard users. role navigation identify the group of links used for navigating throught the webpage.-->
     <section id="section-1">
       <h2 id="define-aria">What is ARIA?</h2>
       <p aria-labelledby="define-aria">
@@ -31,6 +32,7 @@
       </p>
     </section>
     <section id="section-2">
+      <!--aria-labelledby labels and links the id of another element in the DOM as an element's label. For example, below the id features is linked together with the elements inside of the div.-->
       <h2 id="features">Features of ARIA</h2>
       <div aria-labelledby="features">
         <p>
@@ -67,6 +69,7 @@
         be visible to sighted users. The values for this attribute is "true" or
         "false".
       </p>
+      <!--aria-label adds a more descriptive message to what the element is about.-->
       <a
         aria-label="Read more about ARIA attributes here"
         href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes"
