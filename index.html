@@ -9,19 +9,63 @@
     <h1>ARIA</h1>
     <nav role="navigation">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>What is ARIA?</li>
+        <li>Features</li>
+        <li>Attributes</li>
       </ul>
     </nav>
     <section>
       <h2 id="define-aria">What is ARIA?</h2>
       <p aria-labelledby="define-aria">
-        ARIA is acronym for Accessible Rich Internet Applications. It is a set
-        of roles and attributes that can be added to HTML elements to describe a
-        meaning or purpose of user interface. ARIA makes web content and
-        applications more accessible for people with disabilities and those who
-        use assistive technology.
+        ARIA is acronym for Accessible Rich Internet Applications. ARIA was
+        deveoloped in 2008 by the Web Accessibility Initiative (WAI) group. It's
+        not a true programming language but rather a set of attributes you can
+        add to HTML elements to increase their accessibility. These attributes
+        communicate role, state, and property to assistive technology. ARIA
+        doesn't change an element's functionality or visual appearence on it
+        own. Meaning only those who use assistive technology will notice the
+        difference between ones using ARIA and ones that are not. As developers
+        it's our resposiblilty to make our web applications more accessible.
+        ARIA makes web content and applications more accessible for people with
+        disabilities and those who use assistive technology.
+      </p>
+    </section>
+    <section>
+      <h2 id="features">Features of ARIA</h2>
+      <div aria-labelledby="features">
+        <p>
+          There are three main features of ARIA: roles, properties and
+          states/values.
+        </p>
+        <ul>
+          <li>Roles define what and element is or does on the page or app.</li>
+          <li>
+            Properties express characteristics or relationships to an object.
+          </li>
+          <li>
+            States/ Values define the current conditions or date values
+            associated with the element.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Common ARIA Attributes</h2>
+      <p><strong>aria-label</strong> gives a name (or label) to an element.</p>
+      <p>
+        <strong>aria-labelledby</strong> similiar to aria-label, it also changes
+        the element's name/label. Instead of stating the label, it points to
+        another element.
+      </p>
+      <p>
+        <strong>aria-describedby</strong> doesn't affect the element's label.
+        Instead, it provides a description to the element.
+      </p>
+      <p>
+        <strong>aria-hidden</strong> is used to hide an element from
+        accessibility tools, such as screen readers, wihile still allowing it to
+        be visivle to sighted users. The values for this attribute is "true" or
+        "false".
       </p>
     </section>
   </body>
